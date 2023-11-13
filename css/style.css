@@ -33,6 +33,7 @@ nav button{
     box-shadow: 5px 5px 5px #F7937A ;
     background-color: #F25F3A;
     color: #ffffff;
+    border: none;
 }
 main{
     display: grid;
@@ -74,6 +75,7 @@ section{
     background-color: #F25F3A;
     border-radius: 20px;
     padding: 5px 15px;
+    text-align: center;
 }
 .but{
     display: flex;
@@ -88,13 +90,13 @@ section>div h2{
     padding-bottom: 20px;
     color: #242D62;
 }
-section>div p{
+.one{
     color: #9095A7;
     line-height: 30px;
-    font-size: 20pxs;
+    font-size: 20px;
 }
 .tips{
-    width: 70%;
+    width: 85%;
     font-size: 20px;
 }
 .p{
@@ -117,10 +119,32 @@ article h1{
     font-size: 17px;
 }
 .art img{
-    width:25% ;
+    width:25% !important;
     /* padding-bottom: 10px; */
-    margin-bottom: -30px;
+    margin: 0 auto -30px;
 }
+
+.owl-nav{
+    display: none;
+}
+.owl-dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    margin-top: 10px;
+}
+
+.owl-dot{
+     border-radius: 50px;
+    padding: 5px;
+    background-color: #F25F3A;
+ }
+
+ .owl-dot.active{
+    background-color: #9095A7;
+ }
+
 .comments {
     /* border: 2px solid black; */
     background-color: #FAFAFA;
@@ -201,3 +225,267 @@ footer button{
     padding: 5px 10px;
     border-radius: 15px;
 }
+
+
+@media screen and (max-width: 992px) {
+    nav button{
+        margin: 0px auto;
+    }
+    nav{
+        grid-template-columns: 25% 55% 20%
+    }
+    main img{
+        width: 100%;
+    }
+    main{
+        gap: 20px;
+    }
+    main h1{
+        font-size: 28px;
+        padding-left: 55px;
+    }
+    main p{
+        font-size: 15px;
+        width: 85%;
+        padding-left: 55px;
+    }
+    section{
+        gap: 0;
+    }
+    section>div{
+        padding-left:35px ;
+        width: 80%;
+    }
+    section>div h2{
+        font-size: 25px;
+        width: 90%;
+    }
+    .one{
+        font-size: 15px;
+        width: 90%;
+    }
+    section>div p{
+        font-size: 18px;
+        width: 15%;
+
+    }
+    .but p{
+        text-align: center;
+
+    }
+    h4 {
+        font-size: 19px;
+    }
+    .p{
+        font-size: 15px;
+        line-height: 1.5em;
+        padding: 10px 0;
+    }
+    .owl-carousel.owl-loaded{
+        padding: 25px;
+        width: 100%;
+        font-size: 15px;
+    }
+    .second h1{
+        font-size: 35px;
+        width: 50%;
+    }
+    footer > div ul{
+        margin-left: 25%;
+    }
+    footer img{
+        margin-left: 55px;
+    }
+    .link li{
+        padding: 20px;
+        /* text-align: center; */
+    }
+    .link a{
+        font-size: 15px;
+        /* padding: ; */
+    }
+    footer p{
+        margin-right:25px ;
+    }
+    footer >div a{
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav button{
+        display: none;
+    } 
+    nav{
+        grid-template-columns: 25% 75%;
+    }
+    nav img{
+        width: 95%;
+    }
+    main h1{
+        font-size: 25px;
+        padding-left: 40px;
+        width: 90%;
+    }
+    main p{
+        font-size: 15px;
+        padding-left: 40px;
+        width: 90%;
+    }
+    section>div {
+        padding-left: 25px;
+    }
+    section>div h2{
+        font-size: 20px;
+
+    }
+    .p{
+        margin-left: 60px;
+    }
+    .second h1{
+        font-size: 30px;
+        width: 60%;
+    }
+    footer > div ul{
+        margin: 0;
+    }
+    .link li{
+        padding: 20px 10px;
+    }
+    footer p{
+        padding: 0;
+        font-size: 14px;
+    }
+    footer img{
+        margin-left: 40px;
+    }
+    footer{
+        justify-content: 0;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    nav ul{
+        position: fixed;
+        top: -40%;
+        left: 50%;
+        transform: translate(-50% ,-50%);
+        flex-direction: column;
+        background-color: #F25F3A;
+        padding: 20px 30px;
+        line-height: 2em;
+        border-radius: 30px;
+        transition: 1s;
+        width: 40%;
+
+    }
+    nav img{
+        width: 100%;
+    }
+    .ri-close-line{
+        display: none;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 40px;
+    }
+    main h1{
+        font-size: 20px;
+        width: 80%;
+        padding-left: 0px;
+    }
+    main p{
+        padding-left: 0;
+        line-height: 1.4em;
+    }
+    main{
+        padding: 30px;
+    }
+    main img{
+        width: 110%;
+    }
+
+    footer{
+        flex-direction: column-reverse;
+    }
+    section{
+        padding: 40px 10px;
+    }
+    .one{
+        line-height: 1.4em;
+        padding-bottom: 15px;
+    }
+    .but{
+        gap: 10px;
+    }
+    .p{
+        margin-left: 40px;
+        width: 80%;
+    }
+    .but p{
+        padding: 5px;
+    }
+    .second h1{
+        width: 70%;
+        font-size: 25px;
+    }
+    .form{
+        margin-top: 20px;
+    }
+    footer img{
+        margin: 0;
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    main{
+       display: flex;
+       flex-direction: column-reverse ;
+    }
+    main h1{
+        text-align: center;
+        width: 100%;
+        font-size: 25px;
+    }
+    main p{
+        text-align: center;
+        width: 100%;
+
+    }
+    main button{
+        text-align: center;
+        margin: 20px auto;
+        /* width: 100%; */
+        display: block;
+    }
+    section{
+        flex-direction: column;
+    }
+    section>div{
+        width: 100%;
+        text-align: center;
+    }
+    h4{
+        font-size: 15px;
+        background-color: #F7937A;
+        text-align: left;
+        padding: 5px 30px;
+        border-radius: 20px ;
+    }
+    .p{
+        text-align: left;
+        width: 100%;
+      }
+      .second h1{
+        text-align: center;
+      }
+
+
+}
+
+
+
+
